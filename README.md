@@ -1,6 +1,6 @@
 # AH-Translit_Bench: Arabic to Hindi Transliteration Benchmark Dataset
 
-[![PyPI version](https://badge.fury.io/py/AH-Translit_Bench.svg)](https://pypi.org/project/AH-Translit_Bench/)
+[![PyPI version](https://badge.fury.io/py/AH-Translit_Bench.svg)](https://pypi.org/project/AH-Translit-Bench/)
 [![GitHub license](https://img.shields.io/github/license/vilalali/AH-Translit-Bench.svg)](https://github.com/vilalali/AH-Translit-Bench/blob/main/LICENSE)
 
 ## Description

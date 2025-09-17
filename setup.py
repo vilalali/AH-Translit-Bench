@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='AH-Translit_Bench',
-    version='1.0.0',
+    version='1.0.1',
     author='Vilal Ali, Mohd Hozaifa Khan',
     author_email='vilal.ali@research.iiit.ac.in, mohd.hozaifa@research.iiit.ac.in',
     description='A benchmark dataset for Arabic to Hindi transliteration.',
