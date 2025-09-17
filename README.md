@@ -147,3 +147,8 @@ For the full license text, see: [https://creativecommons.org/licenses/by/4.0/](h
 
 The AH-Translit team at, IIIT Hyderabad, is happy to share this benchmark dataset. We extend our sincere thanks to **India Data** for hosting this dataset on their platform.
 
+## Author's
+**Vilal Ali** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vilal-ali/)
+---
+**Mohd Hozaifa Khan** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-hozaifa-khan-361b7814a/)
+---
