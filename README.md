@@ -3,82 +3,44 @@
 [![PyPI version](https://badge.fury.io/py/AH-Translit_Bench.svg)](https://pypi.org/project/AH-Translit_Bench/)
 [![GitHub license](https://img.shields.io/github/license/vilalali/AH-Translit-Bench.svg)](https://github.com/vilalali/AH-Translit-Bench/blob/main/LICENSE)
 
-## Repository Description
+## Description
 
 AH-Translit_Bench is a 2000-entry Arabic to Hindi transliteration benchmark dataset covering Al-Quran, bibliographical, and Modern Standard Arabic (MSA) domains. Provided as a pip-installable Python package for model testing and research.
-
-## Dataset Overview
-
-A benchmark dataset for Arabic to Hindi transliteration, providing parallel transliterated text pairs across diverse domains.
 
 ## Dataset Curators
 
 This dataset was curated by:
 *   **Vilal Ali**  
-    Research Scholar at Data Sciences And Analytics Centre, IIIT Hyderabad
+    MS By Research Student at Data Sciences And Analytics Centre, IIIT Hyderabad
     Email: vilal.ali@research.iiit.ac.in
 *   **Mohd Hozaifa Khan**  
-    Research Scholar at Center for Visual Information Technology (CVIT) IIIT Hyderabad
+    MS By Research Student at Center for Visual Information Technology (CVIT) IIIT Hyderabad
     Email: mohd.hozaifa@research.iiit.ac.in
-    
+
 ## Dataset Usage
 
-This dataset is ideal for training, validating, and testing models for Arabic to Hindi transliteration tasks.
+This dataset is ideal for `testing models` for `Arabic to Hindi` transliteration tasks.
 
 ## Content Type
 
 Text, specifically Arabic source text and its corresponding Hindi transliterated target text.
 
-## Dataset Description
-
-The AH-Translit_Bench dataset provides a collection of parallel text pairs for evaluating and developing Arabic to Hindi transliteration systems. It comprises text from three distinct domains: Al-Quran, bibliographical entries, and Modern Standard Arabic (MSA), ensuring a broad coverage for robust model development. Each entry consists of an Arabic string and its manually curated transliteration into Hindi (Devanagari script). The dataset's structure allows for straightforward loading and integration into various machine learning frameworks.
-
-## Version Name
-
-AH-Translit_Bench_v1.0
-
 ## File Type
-
 CSV (Comma Separated Values)
-
-## Version Overview
-
-This is the initial release of the AH-Translit_Bench dataset, offering a foundational benchmark for Arabic to Hindi transliteration research.
 
 ## Version Description
 
-This inaugural version of the AH-Translit_Bench dataset, version 1.0, provides a comprehensive collection of 2000 Arabic-Hindi transliteration pairs. The dataset is segmented into three domain-specific files to cater to varied research needs: `al-quran_test_bench_mark_500.csv` containing 500 entries from the Al-Quran domain, `biblo_test_bench_mark_1000.csv` with 1000 entries from the bibliographical domain, and `msa_test_bench_mark_500.csv` offering 500 entries from the Modern Standard Arabic (MSA) domain. Each entry consists of an Arabic string and its corresponding, carefully transliterated Hindi equivalent, making it suitable for training and evaluating transliteration models.
+Version 1.0 features 2000 Arabic-Hindi pairs segmented into three domain-specific CSVs (Al-Quran: 500, Biblo: 1000, MSA: 500). Each file contains accurately transliterated Arabic to Hindi text, suitable for model evaluation.
 
 ## Dataset Structure
 
-The dataset is provided as a zip file (though usually downloaded directly via pip) containing three separate `.csv` files, each corresponding to a different domain. The structure within each CSV file is simple: the first column contains the Arabic text, and the second column contains its transliterated Hindi equivalent.
+The package includes three `.csv` files, each representing a distinct domain. Each CSV contains two columns: `Arabic source` text and its `Hindi transliteration`.
 
-```AH-Translit_Bench.zip (Conceptual; files are installed directly)
-├── al-quran_test_bench_mark_500.csv
-├── biblo_test_bench_mark_1000.csv
-└── msa_test_bench_mark_500.csv
-```
+*   `al-quran_test_bench_mark_500.csv`: 500 entries from the Al-Quran domain.
+*   `biblo_test_bench_mark_1000.csv`: 1000 entries from the bibliographical domain.
+*   `msa_test_bench_mark_500.csv`: 500 entries from the Modern Standard Arabic (MSA) domain.
 
-**File Descriptions:**
-*   `al-quran_test_bench_mark_500.csv`: Contains 500 entries from the domain of Al-Quran.
-*   `biblo_test_bench_mark_1000.csv`: Contains 1000 entries from the bibliographical domain.
-*   `msa_test_bench_mark_500.csv`: Contains 500 entries from the Modern Standard Arabic (MSA) domain.
-
-**DIR Descriptions:**
-```
-AH-Translit-Bench
-├── AH_Translit_Bench
-│   ├── data
-│   │   ├── al-quran_test_bench_mark_500.csv
-│   │   ├── biblo_test_bench_mark_1000.csv
-│   │   └── msa_test_bench_mark_500.csv
-│   └── __init__.py
-├── setup.py
-├── README.md
-└── LICENSE
-```
-
-## How to Use This Dataset
+## How to Use this Dataset
 
 To use this dataset, first install it via pip:
 
@@ -114,10 +76,10 @@ print("\nMSA (Modern Standard Arabic) Dataset Head:")
 print(msa_df.head())
 print(f"MSA Dataset Shape: {msa_df.shape}") # Expected: (500, 2)
 
-# Example of accessing data
-first_arabic_text = al_quran_df['Arabic'].iloc # Corrected to access value
-first_hindi_translit = al_quran_df['Hindi'].iloc # Corrected to access value
-print(f"\nFirst Al-Quran entry: Arabic='{first_arabic_text}', Hindi='{first_hindi_translit}'")
+# Example of accessing the first entry's data
+first_arabic_text_al_quran = al_quran_df['Arabic'].iloc # Corrected to access value
+first_hindi_translit_al_quran = al_quran_df['Hindi'].iloc # Corrected to access value
+print(f"\nFirst Al-Quran entry: Arabic='{first_arabic_text_al_quran}', Hindi='{first_hindi_translit_al_quran}'")
 ```
 
 ## Example Data Snippet
@@ -133,21 +95,22 @@ Arabic,Hindi
 
 This Python package code is licensed under the MIT License.
 
-The dataset content (the CSV files) is released under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+The dataset content (the CSV files) is released under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
 You are free to:
-*   **Share** — copy and redistribute the material in any medium or format for any purpose, even commercially.
-*   **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+*   **Share** — copy and redistribute the material in any medium or format.
+*   **Adapt** — remix, transform, and build upon the material.
 Under the following terms:
 *   **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+*   **NonCommercial** — You may not use the material for commercial purposes. This means it is restricted to **research or learning purposes only**.
 *   No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-For the full license text, see: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+For the full license text, see: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
 
 
 ## Acknowledgements
 
-The AH-Translit team at, IIIT Hyderabad, is happy to share this benchmark dataset. We extend our sincere thanks to **India Data** for hosting this dataset on their platform.
+The AH-Translit team from IIIT Hyderabad is happy to share this benchmark dataset. We extend our sincere thanks to **India Data** for hosting this dataset on their platform.
 
-## Author's
+## Authors
 **Vilal Ali** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vilal-ali/)
 ---
 **Mohd Hozaifa Khan** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-hozaifa-khan-361b7814a/)
